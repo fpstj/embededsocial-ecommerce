@@ -286,3 +286,9 @@ input.form-control-footer:focus {
 }
 
 /* Footer end */
+
+/* Stars */
+
+.star {
+  color: #fffff0 !important;
+}

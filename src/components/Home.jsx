@@ -29,9 +29,10 @@ function Home() {
   const renderStars = (count) => {
     const stars = [];
     for (let i = 1; i <= count; i++) {
-      const fill = i <= (hoverValue || rating) ? "#ffc107" : "#e4e5e9";
+      const fill = i <= (hoverValue || rating) ? "#12100e" : "#fffff0";
       stars.push(
         <img
+          className="star"
           key={i}
           src={starIcon}
           alt="star"
