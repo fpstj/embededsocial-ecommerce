@@ -1,0 +1,288 @@
+.container-fluid {
+  background-image: linear-gradient(72deg, #12100e 0%, #2b4162 74%);
+}
+
+/* Navbar start */
+
+.form-control {
+  height: 3em !important;
+  align-self: self-end !important;
+  border: 1px solid #fffff0 !important;
+  border-radius: 3em !important;
+  color: #fffff0 !important;
+  background-color: transparent !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  vertical-align: middle !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin-top: 2em !important;
+  transition: ease-in-out 0.5s !important;
+}
+
+.form-control:focus {
+  border-color: #fffff0 !important;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0 !important;
+  outline: 0 !important;
+  margin-top: 2em !important;
+  transition: ease-in-out 0.3s !important;
+}
+
+textarea:focus,
+input:focus {
+  color: #fffff0 !important;
+}
+
+input,
+select,
+textarea,
+::placeholder {
+  color: #fffff0 !important;
+}
+
+/* Navbar start */
+
+/* Hero start */
+
+.hero {
+  margin-top: 10em !important;
+  height: 40em !important;
+  width: 100% !important;
+  margin-bottom: 7em;
+}
+
+.hero-title {
+  position: relative !important;
+  top: -8em;
+  left: 4em;
+  z-index: 1;
+}
+
+.title-slogan {
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+.hero-header {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-size: 8em;
+}
+
+.main-img {
+  width: 60em !important;
+  height: auto;
+  object-fit: cover;
+  position: relative;
+  left: -10em;
+  top: -2em;
+}
+
+.cta {
+  position: relative !important;
+  top: -15em;
+  right: 4em;
+}
+
+.cta-text {
+  align-self: self-end;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+.cta-btn-order {
+  width: 75%;
+  height: 3em;
+  align-self: self-end;
+  border: 1px solid #fffff0;
+  border-radius: 3em;
+  color: #fffff0;
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 2em;
+  transition: ease-in-out 0.5s;
+}
+
+.cta-btn-order:hover {
+  background-color: #fffff0;
+  font-weight: bold;
+  color: #12100e;
+  margin-top: 2em;
+  transition: ease-in-out 0.5s;
+}
+
+.cta-btn-order:focus {
+  border-color: #fffff0;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+  margin-top: 2em;
+  transition: ease-in-out 0.3s;
+}
+
+/* Hero end */
+
+/* Carousel start */
+
+/* Grid start*/
+
+.grid-title {
+  font-family: "Roboto", sans-serif;
+  color: #fffff0 !important;
+  font-size: 5em;
+  font-weight: 900 !important;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.card {
+  margin: 2em;
+  width: 25em;
+  height: 15em !important;
+  background-color: transparent !important;
+  border: 1px solid #fffff0 !important;
+  border-radius: 1em !important;
+  color: #fffff0 !important;
+  padding: 1.2em 1.2em;
+}
+
+/* .card-img-container {
+  position: absolute !important;
+} */
+
+.card-img-container {
+  width: 13em !important;
+}
+
+.card-img {
+  object-fit: cover !important;
+  position: relative !important;
+  left: -3em !important;
+  top: 2em !important;
+}
+
+/* Card end*/
+
+/* Grid end */
+
+/* Footer start*/
+
+.footer {
+  background-color: #fffff0;
+  color: #12100e;
+  margin-top: 3em;
+  padding: 3em;
+}
+
+.footer-title {
+  margin-bottom: 2em;
+}
+
+.subscribe {
+  font-weight: bold;
+}
+
+.form-control-footer {
+  width: 100%;
+  height: 3em !important;
+  align-self: self-end !important;
+  border: none !important;
+  border-bottom: 1px solid #12100e !important;
+  color: #12100e !important;
+  background-color: transparent !important;
+  position: relative !important;
+  text-align: center !important;
+  text-decoration: none !important;
+  user-select: none !important;
+  -webkit-user-select: none !important;
+  touch-action: manipulation !important;
+  vertical-align: middle !important;
+  cursor: pointer !important;
+  display: inline-block !important;
+  margin-top: 2em !important;
+  transition: ease-in-out 0.5s !important;
+  text-align: start !important;
+}
+
+.form-control-footer:focus {
+  border-color: #12100e !important;
+  outline: 0 !important;
+  margin-top: 2em !important;
+  transition: ease-in-out 0.3s !important;
+  text-align: start !important;
+}
+
+textarea.form-control-footer:focus,
+input.form-control-footer:focus {
+  border-bottom: 1px solid #12100e;
+  color: #12100e !important;
+  text-align: start !important;
+}
+
+.form-control-footer::placeholder {
+  color: #12100e !important;
+}
+
+.cta-btn-footer {
+  width: 100%;
+  height: 3em;
+  align-self: self-end;
+  border: 1px solid #12100e;
+  border-radius: 3em;
+  color: #12100e;
+  background-color: transparent;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  cursor: pointer;
+  display: inline-block;
+  margin-top: 2em;
+  transition: ease-in-out 0.5s;
+  margin-bottom: 1em;
+}
+
+.cta-btn-footer:hover {
+  background-color: #12100e;
+  font-weight: bold;
+  color: #fffff0;
+  margin-top: 2em;
+  transition: ease-in-out 0.5s;
+}
+
+.cta-btn-footer:focus {
+  border-color: #12100e;
+  box-shadow: rgba(213, 217, 217, 0.5) 0 2px 5px 0;
+  outline: 0;
+  margin-top: 2em;
+  transition: ease-in-out 0.3s;
+}
+
+.footer-link {
+  text-decoration: none !important;
+  margin-bottom: 0.5em !important;
+}
+
+.footer-link:hover {
+  font-weight: bolder;
+  text-decoration: none !important;
+  margin-bottom: 0.5em !important;
+}
+
+/* Footer end */
