@@ -1,22 +1,51 @@
-import React from "react";
+import React, { useState } from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Link, Icon } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 import "./Home.css";
 
 import mainImage from "./images/MainImage.png";
+import starIcon from "./icons/star-solid.svg";
 
 // import Hero from "./ui/Hero";
 // import Navbar from "./ui/Navbar";
 
 function Home() {
-  return (
-    // <>
-    //   <Navbar />
-    //   <Hero />
-    //   <h1>Hero</h1>
-    // </>
+  const [hoverValue, setHoverValue] = useState(0);
+  const [rating, setRating] = useState(0);
 
+  const handleMouseOverStar = (value) => {
+    setHoverValue(value);
+  };
+
+  const handleMouseLeaveStar = () => {
+    setHoverValue(0);
+  };
+
+  const handleClickStar = (value) => {
+    setRating(value);
+  };
+
+  const renderStars = (count) => {
+    const stars = [];
+    for (let i = 1; i <= count; i++) {
+      const fill = i <= (hoverValue || rating) ? "#ffc107" : "#e4e5e9";
+      stars.push(
+        <img
+          key={i}
+          src={starIcon}
+          alt="star"
+          style={{ width: "1em", height: "1em", cursor: "pointer", fill: fill }}
+          onMouseOver={() => handleMouseOverStar(i)}
+          onMouseLeave={handleMouseLeaveStar}
+          onClick={() => handleClickStar(i)}
+        />
+      );
+    }
+    return stars;
+  };
+
+  return (
     <div className="container-fluid">
       {/* Navbar start */}
       <nav className="navbar navbar-expand-md navbar-dark bg-none">
@@ -122,11 +151,7 @@ function Home() {
                   SNEAKERS
                 </h5>
                 <p className="card-text">$144.99</p>
-                <div className="card-icons">
-                  <small class="text-body-white">
-                    <Icon></Icon>
-                  </small>
-                </div>
+                <div className="card-icons">{renderStars(5)}</div>
               </div>
             </div>
           </div>
@@ -151,9 +176,7 @@ function Home() {
                   SNEAKERS
                 </h5>
                 <p className="card-text">$144.99</p>
-                <div className="card-icons">
-                  <small class="text-body-white">Last updated 3 mins ago</small>
-                </div>
+                <div className="card-icons">{renderStars(5)}</div>
               </div>
             </div>
           </div>
@@ -178,9 +201,7 @@ function Home() {
                   SNEAKERS
                 </h5>
                 <p className="card-text">$144.99</p>
-                <div className="card-icons">
-                  <small class="text-body-white">Last updated 3 mins ago</small>
-                </div>
+                <div className="card-icons">{renderStars(5)}</div>
               </div>
             </div>
           </div>
@@ -205,9 +226,7 @@ function Home() {
                   SNEAKERS
                 </h5>
                 <p className="card-text">$144.99</p>
-                <p className="card-text">
-                  <small class="text-body-white">Last updated 3 mins ago</small>
-                </p>
+                <div className="card-icons">{renderStars(5)}</div>
               </div>
             </div>
           </div>
@@ -234,9 +253,7 @@ function Home() {
                   SNEAKERS
                 </h5>
                 <p className="card-text">$144.99</p>
-                <div className="card-icons">
-                  <small class="text-body-white">Last updated 3 mins ago</small>
-                </div>
+                <div className="card-icons">{renderStars(5)}</div>
               </div>
             </div>
           </div>
@@ -261,9 +278,7 @@ function Home() {
                   SNEAKERS
                 </h5>
                 <p className="card-text">$144.99</p>
-                <div className="card-icons">
-                  <small class="text-body-white">Last updated 3 mins ago</small>
-                </div>
+                <div className="card-icons">{renderStars(5)}</div>
               </div>
             </div>
           </div>
@@ -288,9 +303,7 @@ function Home() {
                   SNEAKERS
                 </h5>
                 <p className="card-text">$144.99</p>
-                <div className="card-icons">
-                  <small class="text-body-white">Last updated 3 mins ago</small>
-                </div>
+                <div className="card-icons">{renderStars(5)}</div>
               </div>
             </div>
           </div>
@@ -315,9 +328,7 @@ function Home() {
                   SNEAKERS
                 </h5>
                 <p className="card-text">$144.99</p>
-                <div className="card-icons">
-                  <small class="text-body-white">Last updated 3 mins ago</small>
-                </div>
+                <div className="card-icons">{renderStars(5)}</div>
               </div>
             </div>
           </div>
